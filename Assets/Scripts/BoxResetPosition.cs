@@ -17,7 +17,6 @@ public class BoxResetPosition : MonoBehaviour
         //Check for a match with the specified name on any GameObject that collides with your GameObject
         if (collision.gameObject.name == "Base")
         {
-            Debug.Log("something happen");
             gameObject.transform.position = originalPost;
         }
     }
