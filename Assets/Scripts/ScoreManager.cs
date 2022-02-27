@@ -23,13 +23,17 @@ public class ScoreManager : MonoBehaviour
     string score;
     int box;
     float _timerScore;
+
     bool timerStop;
+    bool boxLifted;
+
     Animator animTable;
     Animator animScoreCanvas;
 
 
     private void Start()
     {
+        boxLifted = false;
         timerStop = true;
         totalBox = totalBox - 1;
         box = 0;
@@ -39,7 +43,7 @@ public class ScoreManager : MonoBehaviour
 
     private void Update()
     {
-        if(timerStop == false)
+        if(timerStop == false && boxLifted == true)
         {
             if (timeRemaining > 0)
             {
@@ -65,6 +69,11 @@ public class ScoreManager : MonoBehaviour
 
     public void AddScore()
     {
+        if(boxLifted == false)
+        {
+            boxLifted = true;
+        }
+
         box++;
         boxCount.text = "Box stacked: " + box.ToString();
         Debug.Log(box);

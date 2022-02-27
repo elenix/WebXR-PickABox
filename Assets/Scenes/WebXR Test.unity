@@ -3024,7 +3024,7 @@ MonoBehaviour:
   interactable: {fileID: 1119766361}
   canvasTimer: {fileID: 256728966}
   canvasScore: {fileID: 1453585028}
-  timeRemaining: 62
+  timeRemaining: 60
   nameScore: {fileID: 1864819980}
   rankScore: {fileID: 932255011}
   boxScore: {fileID: 1754843055}
