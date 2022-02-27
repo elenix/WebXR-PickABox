@@ -6,11 +6,14 @@
     "com.unity.ide.rider": "1.2.1",
     "com.unity.ide.visualstudio": "2.0.14",
     "com.unity.ide.vscode": "1.2.4",
+    "com.unity.render-pipelines.universal": "7.7.1",
     "com.unity.test-framework": "1.1.29",
     "com.unity.textmeshpro": "2.1.6",
     "com.unity.timeline": "1.2.18",
     "com.unity.ugui": "1.0.0",
+    "com.unity.xr.interaction.toolkit": "0.10.0-preview.7",
     "com.unity.xr.oculus": "1.11.2",
+    "jillejr.newtonsoft.json-for-unity": "13.0.102",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -50,6 +53,13 @@
       "scopes": [
         "com.de-panther.webxr",
         "com.de-panther.webxr-interactions"
+      ]
+    },
+    {
+      "name": "jilleJr",
+      "url": "https://npm.cloudsmith.io/jillejr/newtonsoft-json-for-unity",
+      "scopes": [
+        "jillejr.newtonsoft.json-for-unity"
       ]
     }
   ]

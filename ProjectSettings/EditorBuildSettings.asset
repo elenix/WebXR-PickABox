@@ -4,10 +4,15 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/WebXR Test.unity
+    guid: 07488e4d13c38a14c96e27439a19ff89
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b403fc0e9cb1dad4eafdb996a7493756,
       type: 2}
     WebXR.Settings: {fileID: 11400000, guid: a2fd3de6386c6e043bd81a2b2e85f7c2, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: b19a076f98e77b442a026fbb870b2025,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5ffe8a3903da11c4a8184ace454a3955,
       type: 2}
