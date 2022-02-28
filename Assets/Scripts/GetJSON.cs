@@ -5,7 +5,7 @@ using System;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-public class DeserializingJSON : MonoBehaviour
+public class GetJSON : MonoBehaviour
 {
     public string url = "https://tvetxr.my/api/scoreBoard";
 
@@ -106,7 +106,7 @@ public class DeserializingJSON : MonoBehaviour
                 texts[0].text = rankString;
                 texts[1].text = item.name;
                 texts[2].text = item.score;
-                texts[3].text = item.time_completion;
+                texts[3].text = item.time_completion + " s";
 
                 i++;
             }

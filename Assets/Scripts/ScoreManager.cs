@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-    public JsonController JC;
+    public PostJSON PJ;
     public Text timer;
     public Text boxCount;
     public int totalBox = 6;
@@ -109,7 +109,7 @@ public class ScoreManager : MonoBehaviour
         animScoreCanvas.Play("Appear");
         canvasTimer.SetActive(false);
 
-        JC.ParseData(playername, score, box, _timerScore);
+        PJ.ParseData(playername, score, box, _timerScore);
     }
 
     void CalculateScore()
@@ -158,6 +158,8 @@ public class ScoreManager : MonoBehaviour
         nameScore.text = playername;
         rankScore.text = score;
         boxScore.text = box.ToString();
-        timerScore.text = _timerScore.ToString();
+
+        _timerScore = 60 - _timerScore;
+        timerScore.text = _timerScore.ToString() + " s";
     }
 }

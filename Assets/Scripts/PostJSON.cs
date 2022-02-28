@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.Networking;
-public class JsonController : MonoBehaviour
+public class PostJSON : MonoBehaviour
 {
     public string url = "https://tvetxr.my/api/scoreBoard";
 
     public GameObject leaderboardCanvas;
-    public DeserializingJSON DJ;
+    public GetJSON GJ;
 
     ScoreData scoreData;
 
@@ -50,8 +50,8 @@ public class JsonController : MonoBehaviour
             {
                 string responseText = request.downloadHandler.text;
                 Debug.Log("Response from the server: " + responseText);
-                DJ.PlayerName(scoreData.name);
-                DJ.ShowLeaderboard();
+                GJ.PlayerName(scoreData.name);
+                GJ.ShowLeaderboard();
             }
         }
     }

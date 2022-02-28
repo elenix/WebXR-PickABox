@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class CanvasController : MonoBehaviour
 {
@@ -37,5 +38,15 @@ public class CanvasController : MonoBehaviour
         string c = st[Random.Range(0, st.Length)].ToString() + st[Random.Range(0, st.Length)].ToString() + st[Random.Range(0, st.Length)].ToString() + Random.Range(0,25).ToString();
 
         return c;
+    }
+
+    public void KeyboardInput()
+    {
+        playerName.text = playerName.text + EventSystem.current.currentSelectedGameObject.name;
+    }
+
+    public void DeleteString()
+    {
+        playerName.text = playerName.text.Substring(0, playerName.text.Length - 1);
     }
 }
